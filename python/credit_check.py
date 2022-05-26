@@ -13,8 +13,7 @@ def credit_check(nums):
             bigger = list(str(arr[j]))
             arr[j] = int(bigger[0]) + int(bigger[1])
             
-    res = functools.reduce(lambda a, b : a + b, arr)
-    print(res)     
+    res = functools.reduce(lambda a, b : a + b, arr)   
     if res % 10 == 0 :
         return "The number is valid!"
     else : return "The number is invalid!"
